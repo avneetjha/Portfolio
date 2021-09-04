@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BASIC HTML</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+     <nav class="navBar">
+<h1>Avneet Kumar Jha Portfolio</h1>
+<div class="navigationMenu">
+  <a href="#aboutme">About Me</a>
+   <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+     <a href="#contactform">Let's Connect..!</a>
+</div>
+    </nav>
+    <section class="heroSection">
+      <img class="portfolioImage"
+      src="./image/avatar.png">
+      <div class="herosectionDetails">
+      <h1>Avneet Kumar Jha</h1>
+      <h3>Pursuing B.tech at AIEM</h3>
+      </div>
+    </section>
+    <section class="aboutMe" id="aboutMe"> 
+      <h1>What I DO...</h1>
+      <p>I Am Pursuing B.tech At Abacus Institute Of Engineering And Management. I will be completing my B.tech in year 2023 </p>
+    </section>
+    <section="SkillsAndProjects">
+      <div class="skills" id="skills">
+       <h1  class="cardHeading">Skills</h1>
+       <img title="HTML" src="./image/html.svg">
+       <img title="CSS" src="./image/css.svg">
+       <img title="PYTHON" src="./image/python.svg">
+       <img title="C" src="./image/c.svg">
+      </div>
+       <div class="projects" id="projects">
+       <h1  class="cardHeading">Projects</h1>
+       <div class="projectContainer">
+       <img src="./image/netflix.svg"/>
+       <div class="projectDescription">
+         <h4>NETFLIX CLONE</h4>
+         <p>The project is about cloning the frontend of the netflix website</p>
+         </div>
+      </div>
+       <div class="projectContainer">
+       <img src="./image/neural.svg"/>
+       <div class="projectDescription">
+         <h4>TRAINING OF NEURAL NETWORK</h4>
+         <p>The project is about creating neural network and testing it </p>
+         </div>
+      </div>
+       <div class="projectContainer">
+       <img src="./image/python.svg"/>
+       <div class="projectDescription">
+         <h4>OPEN CV USING PYTHON</h4>
+         <p>The project is all about writing an open cv program using python that will detect human faces and count the total number of faces present in any image by using the head count </p>
+         </div>
+      </div>
+       <div class="projectContainer">
+       <img src="./image/weather.svg"/>
+       <div class="projectDescription">
+         <h4>REQUESTING WEATHER API</h4>
+         <p>The project is about requesting for the weather report</p>
+         </div>
+      </div>
+      </div>
+    </section>
+    <section class="contactForm" id="contactForm">
+    <h1>Let's Connect..!</h1>
+    <div class="formGroup">
+      <label for="name">ENTER FULL NAME</label><br/>
+      <input type="text" id="name" placeholder="FULL NAME"/>
+      </div>
+      <div class="formGroup">
+      <label for="email">EMAIL</label><br/>
+      <input type="text" id="email" placeholder="EMAIL"/>
+      </div>
+      <div class="formGroup">
+      <label for="message">MESSAGE</label><br/>
+      <textarea placeholder="SEND SOME MESSAGE...!" id="message" name="w3review" rows="4" cols="50"></textarea>
+      </div>
+      <button class="submitButton" onClick={submit() }>Connect</button>
+    </section>
+   </main>
+   <script src="script.js"></script>
+  </body>
+</html>
